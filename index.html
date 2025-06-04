@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-key="page_title">Undangan Pernikahan Raisa & Hamish</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container-main">
+        <header class="hero-section">
+            <div class="hero-content">
+                <p data-lang-key="you_are_invited">Anda Diundang ke Pernikahan</p>
+                <h1>Raisa & Hamish</h1>
+                <p id="event-date" data-lang-key="event_date_placeholder">Sabtu, 25 Desember 2025</p>
+                <div id="countdown" class="countdown-timer">
+                    <div><span id="days">00</span> <span data-lang-key="days_unit">Hari</span></div>
+                    <div><span id="hours">00</span> <span data-lang-key="hours_unit">Jam</span></div>
+                    <div><span id="minutes">00</span> <span data-lang-key="minutes_unit">Menit</span></div>
+                    <div><span id="seconds">00</span> <span data-lang-key="seconds_unit">Detik</span></div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <button id="language-toggle" class="language-toggle-btn">English</button>
+        <button id="music-toggle" class="music-toggle-btn"><i class="fas fa-play"></i></button>
+        <audio id="background-music" loop>
+            <source src="images/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <main>
+            <section id="greeting" class="fade-in">
+                 <h2 data-lang-key="greeting_heading">Assalamualaikum Wr. Wb.</h2>
+                 <p id="guest-name-display" data-lang-key="share_for_guest_default">Untuk Yth. </p>
+                 <p data-lang-key="invitation_text">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk berbagi kebahagiaan di hari pernikahan kami.</p>
+            </section>
+
+            <section id="couple" class="fade-in">
+                <h2 data-lang-key="bride_groom_heading">Mempelai</h2>
+                <div class="couple-info">
+                    <div class="profile">
+                        <img src="images/couple.jpg" alt="Raisa Andriana" class="profile-pic">
+                        <h3>Raisa Andriana</h3>
+                        <p data-lang-key="bride_bio">Putri Tercinta Dari</p>
+                        <p data-lang-key="bride_parent_info">Bapak Andriana & Ibu Andriana</p>
+                    </div>
+                    <div class="ampersand">&</div>
+                    <div class="profile">
+                        <img src="images/couple.jpg" alt="Hamish Daud" class="profile-pic">
+                        <h3>Hamish Daud</h3>
+                        <p data-lang-key="groom_bio">Putra Tercinta Dari</p>
+                        <p data-lang-key="groom_parent_info">Bapak Daud & Ibu Daud</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="love-story" class="fade-in">
+                <h2 data-lang-key="love_story_heading">Love Story</h2>
+                <div class="story-timeline">
+                    <div class="story-event">
+                        <h3 data-lang-key="story_event1_title">Pertemuan Pertama</h3>
+                        <p data-lang-key="story_event1_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="story-event">
+                        <h3 data-lang-key="story_event2_title">Lamaran</h3>
+                        <p data-lang-key="story_event2_desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="event-details" class="fade-in">
+                <h2 data-lang-key="event_details_heading">Detail Acara</h2>
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <h3 data-lang-key="ceremony_heading">Akad Nikah</h3>
+                        <p><i class="fas fa-calendar-alt"></i> <span data-lang-key="ceremony_date">Sabtu, 25 Desember 2025</span></p>
+                        <p><i class="fas fa-clock"></i> <span data-lang-key="ceremony_time">09:00 - 11:00 WIB</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-lang-key="ceremony_location">Masjid Istiqlal, Jakarta</span></p>
+                    </div>
+                    <div class="detail-card">
+                        <h3 data-lang-key="reception_heading">Resepsi</h3>
+                        <p><i class="fas fa-calendar-alt"></i> <span data-lang-key="reception_date">Sabtu, 25 Desember 2025</span></p>
+                        <p><i class="fas fa-clock"></i> <span data-lang-key="reception_time">19:00 - 21:00 WIB</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-lang-key="reception_location">Grand Ballroom Hotel Indonesia Kempinski</span></p>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/example" target="_blank" class="btn" data-lang-key="maps_button">
+                    <i class="fas fa-map-marked-alt"></i> Navigasi Lokasi
+                </a>
+            </section>
+
+            <section id="gallery" class="fade-in">
+                <h2 data-lang-key="gallery_heading">Gallery Foto</h2>
+                <div class="gallery-container">
+                    <div class="gallery-slide fade">
+                        <img src="images/gallery1.jpg" alt="Foto Prewedding 1">
+                    </div>
+                    <div class="gallery-slide fade">
+                        <img src="images/gallery2.jpg" alt="Foto Prewedding 2">
+                    </div>
+                    <div class="gallery-slide fade">
+                        <img src="images/gallery3.jpg" alt="Foto Prewedding 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </section>
+
+            <section id="wishes" class="fade-in">
+                <h2 data-lang-key="wishes_heading">Ucapan & Doa</h2>
+                <p data-lang-key="wishes_prompt">Bagikan kebahagiaan Anda dengan mengirimkan ucapan dan doa untuk kami.</p>
+                <form id="wish-form">
+                    <input type="text" id="guest-name-input" data-lang-placeholder-key="wishes_name_placeholder" placeholder="Nama Anda" required>
+                    <textarea id="guest-wish-input" data-lang-placeholder-key="wishes_message_placeholder" placeholder="Tulis ucapan Anda di sini..." required></textarea>
+                    <button type="submit" class="btn" data-lang-key="send_wish_button">Kirim Ucapan</button>
+                </form>
+                <div class="guest-wishes">
+                    <p data-lang-key="wishes_info">Fitur ucapan dengan penyimpanan data memerlukan implementasi backend.</p>
+                </div>
+            </section>
+
+            <section id="digital-envelope" class="fade-in">
+                <h2 data-lang-key="digital_gift_heading">Amplop Digital</h2>
+                <p data-lang-key="digital_gift_message">Kehadiran Anda adalah hadiah terindah. Namun, jika Anda ingin memberikan tanda kasih, kami menyediakan opsi amplop digital:</p>
+                <div class="gift-options">
+                    <div class="gift-option">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_dana_blue.svg/1200px-Logo_dana_blue.svg.png" alt="DANA">
+                        <p data-lang-key="dana_account">DANA: 081234567890 (a.n. Raisa)</p>
+                        <button class="btn-copy" data-account="081234567890" data-lang-key="copy_button">Salin</button>
+                    </div>
+                    <div class="gift-option">
+                         <img src="https://upload.wikimedia.org/wikipedia/id/thumb/e/e8/Bank_Central_Asia.svg/1200px-Bank_Central_Asia.svg.png" alt="BCA">
+                        <p data-lang-key="bca_account">BCA: 1234567890 (a.n. Hamish)</p>
+                        <button class="btn-copy" data-account="1234567890" data-lang-key="copy_button">Salin</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="share-section" class="fade-in">
+                <h2 data-lang-key="share_invite_heading">Bagikan Undangan</h2>
+                <div class="share-buttons">
+                    <button id="whatsapp-share-btn" class="btn"><i class="fab fa-whatsapp"></i> <span data-lang-key="share_on_whatsapp">Broadcast via WhatsApp</span></button>
+                    <button id="native-share-btn" class="btn"><i class="fas fa-share-alt"></i> <span data-lang-key="native_share_button">Share Lainnya</span></button>
+                </div>
+                <p class="small-note" data-lang-key="whatsapp_note">Fitur broadcast WhatsApp akan membuka aplikasi WhatsApp dengan pesan siap kirim. Untuk broadcast massal, diperlukan solusi backend.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p data-lang-key="footer_thank_you">Terima kasih atas kehadiran & doa restu Anda.</p>
+            <p>&copy; <span id="current-year">2025</span> Raisa & Hamish. All rights reserved.</p>
+            <p class="credits" data-lang-key="credits_text">Undangan Dibuat dengan <i class="fas fa-heart"></i></p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
